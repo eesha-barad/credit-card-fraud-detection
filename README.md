@@ -208,7 +208,3 @@ explained to an analyst, auditor, or customer rather than trusted blindly.
 - Natural next steps: wrap `score_transaction()` in a FastAPI endpoint, add a Streamlit
   review dashboard for flagged transactions, log decisions for an audit trail, and monitor
   for model drift as fraud patterns evolve over time.
-
-## 12. License
-
-This project is submitted as academic coursework. See `LICENSE` for terms.
