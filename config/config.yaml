@@ -1,0 +1,21 @@
+# Configuration for the AI-Powered Credit Card Fraud Detection pipeline
+
+data:
+  # Path to creditcard.csv. See dataset/README.md for how to obtain it.
+  path: "dataset/creditcard.csv"
+
+model:
+  random_state: 42
+  test_size: 0.2
+
+  # Random Forest training
+  rf_n_estimators: 200
+  rf_max_depth: 12
+  rf_step: 20 # trees added per progress-bar update during training
+
+alert:
+  # Fraud-probability thresholds for the alert simulator's risk bands
+  low: 0.3 # below this -> LOW risk, approve
+  high: 0.7 # above this -> HIGH risk, block & alert
+
+output_dir: "outputs"
